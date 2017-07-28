@@ -127,7 +127,7 @@
     [self.view addSubview:rightButton];
 
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame = CGRectMake(0, 20, 40, 32);
+    button.frame = CGRectMake(SCREENWIDTH - 130, 20, 40, 32);
     [button setTitle:@"滤镜" forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont systemFontOfSize:14];
     [button.titleLabel setAdjustsFontSizeToFitWidth:YES];
@@ -136,9 +136,21 @@
     [button addTarget:self action:@selector(changeFiter) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
+    UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    backButton.frame = CGRectMake(12, 20, 40, 32);
+    [backButton setTitle:@"<返回" forState:UIControlStateNormal];
+    backButton.titleLabel.font = [UIFont boldSystemFontOfSize:14];
+    [backButton.titleLabel setAdjustsFontSizeToFitWidth:YES];
+    [backButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    
+    [backButton addTarget:self action:@selector(backButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:backButton];
     
 }
-
+- (void)backButtonClick
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 - (void)changeFiter
 {
     NSDictionary *filter = @{@"怀旧":@"CIPhotoEffectInstant",
@@ -176,6 +188,8 @@
     
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 20)];
     label.textColor = [UIColor greenColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.centerX = self.view.centerX;
     label.center = CGPointMake(SCREENWIDTH / 2, SCREENHEITH / 2);
     label.text = @"已保存到相册";
     label.font = [UIFont systemFontOfSize:14 weight:UIFontWeightMedium];

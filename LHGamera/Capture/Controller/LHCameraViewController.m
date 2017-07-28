@@ -189,7 +189,10 @@
 #pragma mark -- DPPhotoGroupViewControllerDelegate
 - (void)didSelectPhotos:(NSMutableArray *)photos
 {
-    [self enterWatermarkWithImage:photos.lastObject];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self enterWatermarkWithImage:photos.lastObject];
+ 
+    });
 }
 - (void)backClick{
     [self captureAuthorizationFail];

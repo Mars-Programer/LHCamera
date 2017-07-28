@@ -165,7 +165,6 @@
 			children = (
 				E493124E1F233F3800EBEE6A /* LHGamera */,
 				E49312681F233F3800EBEE6A /* LHGameraTests */,
-				E49312731F233F3800EBEE6A /* LHGameraUITests */,
 				E493124D1F233F3800EBEE6A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -209,6 +208,7 @@
 		E49312681F233F3800EBEE6A /* LHGameraTests */ = {
 			isa = PBXGroup;
 			children = (
+				E49312731F233F3800EBEE6A /* LHGameraUITests */,
 				E49312691F233F3800EBEE6A /* LHGameraTests.m */,
 				E493126B1F233F3800EBEE6A /* Info.plist */,
 			);
@@ -221,7 +221,8 @@
 				E49312741F233F3800EBEE6A /* LHGameraUITests.m */,
 				E49312761F233F3800EBEE6A /* Info.plist */,
 			);
-			path = LHGameraUITests;
+			name = LHGameraUITests;
+			path = ../LHGameraUITests;
 			sourceTree = "<group>";
 		};
 		E49312821F233F9200EBEE6A /* Capture */ = {
