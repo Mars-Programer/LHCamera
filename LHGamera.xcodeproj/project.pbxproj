@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E439CED21F2477AF0035BEBD /* DPPhotoGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E439CEC61F2477AF0035BEBD /* DPPhotoGroupViewController.m */; };
+		E439CED31F2477AF0035BEBD /* DPPhotoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E439CEC81F2477AF0035BEBD /* DPPhotoListViewController.m */; };
+		E439CED41F2477AF0035BEBD /* gallery_chs_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E439CECA1F2477AF0035BEBD /* gallery_chs_normal@2x.png */; };
+		E439CED51F2477AF0035BEBD /* gallery_chs_normal@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E439CECB1F2477AF0035BEBD /* gallery_chs_normal@3x.png */; };
+		E439CED61F2477AF0035BEBD /* gallery_chs_seleceted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E439CECC1F2477AF0035BEBD /* gallery_chs_seleceted@2x.png */; };
+		E439CED71F2477AF0035BEBD /* gallery_chs_seleceted@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E439CECD1F2477AF0035BEBD /* gallery_chs_seleceted@3x.png */; };
+		E439CED81F2477AF0035BEBD /* group_default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E439CECE1F2477AF0035BEBD /* group_default@2x.png */; };
+		E439CED91F2477AF0035BEBD /* group_default@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E439CECF1F2477AF0035BEBD /* group_default@3x.png */; };
+		E439CEDA1F2477AF0035BEBD /* nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E439CED01F2477AF0035BEBD /* nav_back@2x.png */; };
+		E439CEDB1F2477AF0035BEBD /* nav_back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E439CED11F2477AF0035BEBD /* nav_back@3x.png */; };
+		E487FF4E1F2B104D007DF5A0 /* LHCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E487FF4D1F2B104D007DF5A0 /* LHCameraViewController.m */; };
+		E49312511F233F3800EBEE6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E49312501F233F3800EBEE6A /* main.m */; };
+		E49312541F233F3800EBEE6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E49312531F233F3800EBEE6A /* AppDelegate.m */; };
+		E49312571F233F3800EBEE6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49312561F233F3800EBEE6A /* ViewController.m */; };
+		E493125A1F233F3800EBEE6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E49312581F233F3800EBEE6A /* Main.storyboard */; };
+		E493125C1F233F3800EBEE6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E493125B1F233F3800EBEE6A /* Assets.xcassets */; };
+		E493125F1F233F3800EBEE6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E493125D1F233F3800EBEE6A /* LaunchScreen.storyboard */; };
+		E493126A1F233F3800EBEE6A /* LHGameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E49312691F233F3800EBEE6A /* LHGameraTests.m */; };
+		E49312751F233F3800EBEE6A /* LHGameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E49312741F233F3800EBEE6A /* LHGameraUITests.m */; };
+		E49312A31F233F9200EBEE6A /* LHCaptureView.m in Sources */ = {isa = PBXBuildFile; fileRef = E49312851F233F9200EBEE6A /* LHCaptureView.m */; };
+		E49312A41F233F9200EBEE6A /* PHAsset+Method.m in Sources */ = {isa = PBXBuildFile; fileRef = E49312881F233F9200EBEE6A /* PHAsset+Method.m */; };
+		E49312A51F233F9200EBEE6A /* UIImage+Filter.m in Sources */ = {isa = PBXBuildFile; fileRef = E493128A1F233F9200EBEE6A /* UIImage+Filter.m */; };
+		E49312A61F233F9200EBEE6A /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = E493128C1F233F9200EBEE6A /* UIImage+Resize.m */; };
+		E49312A71F233F9200EBEE6A /* UIImage+Watermark.m in Sources */ = {isa = PBXBuildFile; fileRef = E493128E1F233F9200EBEE6A /* UIImage+Watermark.m */; };
+		E49312AA1F233F9200EBEE6A /* LHWatermarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49312951F233F9200EBEE6A /* LHWatermarkViewController.m */; };
+		E49312AB1F233F9200EBEE6A /* LHWatermarkDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E49312981F233F9200EBEE6A /* LHWatermarkDataModel.m */; };
+		E49312AD1F233F9200EBEE6A /* LHSelectWatermarkView.m in Sources */ = {isa = PBXBuildFile; fileRef = E493129D1F233F9200EBEE6A /* LHSelectWatermarkView.m */; };
+		E49312B01F233F9200EBEE6A /* LHStickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E49312A21F233F9200EBEE6A /* LHStickerView.m */; };
+		E49312B31F2341E300EBEE6A /* UIView+AAToolkit.m in Sources */ = {isa = PBXBuildFile; fileRef = E49312B21F2341E300EBEE6A /* UIView+AAToolkit.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E49312661F233F3800EBEE6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E49312441F233F3800EBEE6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E493124B1F233F3800EBEE6A;
+			remoteInfo = LHGamera;
+		};
+		E49312711F233F3800EBEE6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E49312441F233F3800EBEE6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E493124B1F233F3800EBEE6A;
+			remoteInfo = LHGamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E439CEC51F2477AF0035BEBD /* DPPhotoGroupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPhotoGroupViewController.h; sourceTree = "<group>"; };
+		E439CEC61F2477AF0035BEBD /* DPPhotoGroupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPhotoGroupViewController.m; sourceTree = "<group>"; };
+		E439CEC71F2477AF0035BEBD /* DPPhotoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPhotoListViewController.h; sourceTree = "<group>"; };
+		E439CEC81F2477AF0035BEBD /* DPPhotoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPhotoListViewController.m; sourceTree = "<group>"; };
+		E439CECA1F2477AF0035BEBD /* gallery_chs_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gallery_chs_normal@2x.png"; sourceTree = "<group>"; };
+		E439CECB1F2477AF0035BEBD /* gallery_chs_normal@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gallery_chs_normal@3x.png"; sourceTree = "<group>"; };
+		E439CECC1F2477AF0035BEBD /* gallery_chs_seleceted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gallery_chs_seleceted@2x.png"; sourceTree = "<group>"; };
+		E439CECD1F2477AF0035BEBD /* gallery_chs_seleceted@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gallery_chs_seleceted@3x.png"; sourceTree = "<group>"; };
+		E439CECE1F2477AF0035BEBD /* group_default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "group_default@2x.png"; sourceTree = "<group>"; };
+		E439CECF1F2477AF0035BEBD /* group_default@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "group_default@3x.png"; sourceTree = "<group>"; };
+		E439CED01F2477AF0035BEBD /* nav_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@2x.png"; sourceTree = "<group>"; };
+		E439CED11F2477AF0035BEBD /* nav_back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@3x.png"; sourceTree = "<group>"; };
+		E487FF4C1F2B104D007DF5A0 /* LHCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHCameraViewController.h; sourceTree = "<group>"; };
+		E487FF4D1F2B104D007DF5A0 /* LHCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHCameraViewController.m; sourceTree = "<group>"; };
+		E493124C1F233F3800EBEE6A /* LHGamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHGamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49312501F233F3800EBEE6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E49312521F233F3800EBEE6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E49312531F233F3800EBEE6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E49312551F233F3800EBEE6A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E49312561F233F3800EBEE6A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E49312591F233F3800EBEE6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E493125B1F233F3800EBEE6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E493125E1F233F3800EBEE6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E49312601F233F3800EBEE6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49312651F233F3800EBEE6A /* LHGameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHGameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49312691F233F3800EBEE6A /* LHGameraTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHGameraTests.m; sourceTree = "<group>"; };
+		E493126B1F233F3800EBEE6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49312701F233F3800EBEE6A /* LHGameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LHGameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E49312741F233F3800EBEE6A /* LHGameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LHGameraUITests.m; sourceTree = "<group>"; };
+		E49312761F233F3800EBEE6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E49312841F233F9200EBEE6A /* LHCaptureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHCaptureView.h; sourceTree = "<group>"; };
+		E49312851F233F9200EBEE6A /* LHCaptureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHCaptureView.m; sourceTree = "<group>"; };
+		E49312871F233F9200EBEE6A /* PHAsset+Method.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHAsset+Method.h"; sourceTree = "<group>"; };
+		E49312881F233F9200EBEE6A /* PHAsset+Method.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHAsset+Method.m"; sourceTree = "<group>"; };
+		E49312891F233F9200EBEE6A /* UIImage+Filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Filter.h"; sourceTree = "<group>"; };
+		E493128A1F233F9200EBEE6A /* UIImage+Filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Filter.m"; sourceTree = "<group>"; };
+		E493128B1F233F9200EBEE6A /* UIImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		E493128C1F233F9200EBEE6A /* UIImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
+		E493128D1F233F9200EBEE6A /* UIImage+Watermark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Watermark.h"; sourceTree = "<group>"; };
+		E493128E1F233F9200EBEE6A /* UIImage+Watermark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Watermark.m"; sourceTree = "<group>"; };
+		E49312941F233F9200EBEE6A /* LHWatermarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHWatermarkViewController.h; sourceTree = "<group>"; };
+		E49312951F233F9200EBEE6A /* LHWatermarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHWatermarkViewController.m; sourceTree = "<group>"; };
+		E49312971F233F9200EBEE6A /* LHWatermarkDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHWatermarkDataModel.h; sourceTree = "<group>"; };
+		E49312981F233F9200EBEE6A /* LHWatermarkDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHWatermarkDataModel.m; sourceTree = "<group>"; };
+		E493129C1F233F9200EBEE6A /* LHSelectWatermarkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHSelectWatermarkView.h; sourceTree = "<group>"; };
+		E493129D1F233F9200EBEE6A /* LHSelectWatermarkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHSelectWatermarkView.m; sourceTree = "<group>"; };
+		E49312A11F233F9200EBEE6A /* LHStickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHStickerView.h; sourceTree = "<group>"; };
+		E49312A21F233F9200EBEE6A /* LHStickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHStickerView.m; sourceTree = "<group>"; };
+		E49312B11F2341E300EBEE6A /* UIView+AAToolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AAToolkit.h"; sourceTree = "<group>"; };
+		E49312B21F2341E300EBEE6A /* UIView+AAToolkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AAToolkit.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E49312491F233F3800EBEE6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E49312621F233F3800EBEE6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E493126D1F233F3800EBEE6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E439CEC41F2477AF0035BEBD /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				E439CEC51F2477AF0035BEBD /* DPPhotoGroupViewController.h */,
+				E439CEC61F2477AF0035BEBD /* DPPhotoGroupViewController.m */,
+				E439CEC71F2477AF0035BEBD /* DPPhotoListViewController.h */,
+				E439CEC81F2477AF0035BEBD /* DPPhotoListViewController.m */,
+				E439CEC91F2477AF0035BEBD /* DPResources */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		E439CEC91F2477AF0035BEBD /* DPResources */ = {
+			isa = PBXGroup;
+			children = (
+				E439CECA1F2477AF0035BEBD /* gallery_chs_normal@2x.png */,
+				E439CECB1F2477AF0035BEBD /* gallery_chs_normal@3x.png */,
+				E439CECC1F2477AF0035BEBD /* gallery_chs_seleceted@2x.png */,
+				E439CECD1F2477AF0035BEBD /* gallery_chs_seleceted@3x.png */,
+				E439CECE1F2477AF0035BEBD /* group_default@2x.png */,
+				E439CECF1F2477AF0035BEBD /* group_default@3x.png */,
+				E439CED01F2477AF0035BEBD /* nav_back@2x.png */,
+				E439CED11F2477AF0035BEBD /* nav_back@3x.png */,
+			);
+			path = DPResources;
+			sourceTree = "<group>";
+		};
+		E49312431F233F3800EBEE6A = {
+			isa = PBXGroup;
+			children = (
+				E493124E1F233F3800EBEE6A /* LHGamera */,
+				E49312681F233F3800EBEE6A /* LHGameraTests */,
+				E49312731F233F3800EBEE6A /* LHGameraUITests */,
+				E493124D1F233F3800EBEE6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E493124D1F233F3800EBEE6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E493124C1F233F3800EBEE6A /* LHGamera.app */,
+				E49312651F233F3800EBEE6A /* LHGameraTests.xctest */,
+				E49312701F233F3800EBEE6A /* LHGameraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E493124E1F233F3800EBEE6A /* LHGamera */ = {
+			isa = PBXGroup;
+			children = (
+				E439CEC41F2477AF0035BEBD /* Lib */,
+				E49312821F233F9200EBEE6A /* Capture */,
+				E49312521F233F3800EBEE6A /* AppDelegate.h */,
+				E49312531F233F3800EBEE6A /* AppDelegate.m */,
+				E49312551F233F3800EBEE6A /* ViewController.h */,
+				E49312561F233F3800EBEE6A /* ViewController.m */,
+				E49312581F233F3800EBEE6A /* Main.storyboard */,
+				E493125B1F233F3800EBEE6A /* Assets.xcassets */,
+				E493125D1F233F3800EBEE6A /* LaunchScreen.storyboard */,
+				E49312601F233F3800EBEE6A /* Info.plist */,
+				E493124F1F233F3800EBEE6A /* Supporting Files */,
+			);
+			path = LHGamera;
+			sourceTree = "<group>";
+		};
+		E493124F1F233F3800EBEE6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E49312501F233F3800EBEE6A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E49312681F233F3800EBEE6A /* LHGameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				E49312691F233F3800EBEE6A /* LHGameraTests.m */,
+				E493126B1F233F3800EBEE6A /* Info.plist */,
+			);
+			path = LHGameraTests;
+			sourceTree = "<group>";
+		};
+		E49312731F233F3800EBEE6A /* LHGameraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E49312741F233F3800EBEE6A /* LHGameraUITests.m */,
+				E49312761F233F3800EBEE6A /* Info.plist */,
+			);
+			path = LHGameraUITests;
+			sourceTree = "<group>";
+		};
+		E49312821F233F9200EBEE6A /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				E49312831F233F9200EBEE6A /* Camera */,
+				E49312861F233F9200EBEE6A /* Category */,
+				E493128F1F233F9200EBEE6A /* Controller */,
+				E49312961F233F9200EBEE6A /* Model */,
+				E49312991F233F9200EBEE6A /* View */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
+		E49312831F233F9200EBEE6A /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				E49312841F233F9200EBEE6A /* LHCaptureView.h */,
+				E49312851F233F9200EBEE6A /* LHCaptureView.m */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		E49312861F233F9200EBEE6A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E49312871F233F9200EBEE6A /* PHAsset+Method.h */,
+				E49312881F233F9200EBEE6A /* PHAsset+Method.m */,
+				E49312891F233F9200EBEE6A /* UIImage+Filter.h */,
+				E493128A1F233F9200EBEE6A /* UIImage+Filter.m */,
+				E493128B1F233F9200EBEE6A /* UIImage+Resize.h */,
+				E493128C1F233F9200EBEE6A /* UIImage+Resize.m */,
+				E493128D1F233F9200EBEE6A /* UIImage+Watermark.h */,
+				E493128E1F233F9200EBEE6A /* UIImage+Watermark.m */,
+				E49312B11F2341E300EBEE6A /* UIView+AAToolkit.h */,
+				E49312B21F2341E300EBEE6A /* UIView+AAToolkit.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		E493128F1F233F9200EBEE6A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E487FF4C1F2B104D007DF5A0 /* LHCameraViewController.h */,
+				E487FF4D1F2B104D007DF5A0 /* LHCameraViewController.m */,
+				E49312941F233F9200EBEE6A /* LHWatermarkViewController.h */,
+				E49312951F233F9200EBEE6A /* LHWatermarkViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E49312961F233F9200EBEE6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E49312971F233F9200EBEE6A /* LHWatermarkDataModel.h */,
+				E49312981F233F9200EBEE6A /* LHWatermarkDataModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E49312991F233F9200EBEE6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E493129C1F233F9200EBEE6A /* LHSelectWatermarkView.h */,
+				E493129D1F233F9200EBEE6A /* LHSelectWatermarkView.m */,
+				E49312A11F233F9200EBEE6A /* LHStickerView.h */,
+				E49312A21F233F9200EBEE6A /* LHStickerView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E493124B1F233F3800EBEE6A /* LHGamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E49312791F233F3800EBEE6A /* Build configuration list for PBXNativeTarget "LHGamera" */;
+			buildPhases = (
+				E49312481F233F3800EBEE6A /* Sources */,
+				E49312491F233F3800EBEE6A /* Frameworks */,
+				E493124A1F233F3800EBEE6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LHGamera;
+			productName = LHGamera;
+			productReference = E493124C1F233F3800EBEE6A /* LHGamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E49312641F233F3800EBEE6A /* LHGameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E493127C1F233F3800EBEE6A /* Build configuration list for PBXNativeTarget "LHGameraTests" */;
+			buildPhases = (
+				E49312611F233F3800EBEE6A /* Sources */,
+				E49312621F233F3800EBEE6A /* Frameworks */,
+				E49312631F233F3800EBEE6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E49312671F233F3800EBEE6A /* PBXTargetDependency */,
+			);
+			name = LHGameraTests;
+			productName = LHGameraTests;
+			productReference = E49312651F233F3800EBEE6A /* LHGameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E493126F1F233F3800EBEE6A /* LHGameraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E493127F1F233F3800EBEE6A /* Build configuration list for PBXNativeTarget "LHGameraUITests" */;
+			buildPhases = (
+				E493126C1F233F3800EBEE6A /* Sources */,
+				E493126D1F233F3800EBEE6A /* Frameworks */,
+				E493126E1F233F3800EBEE6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E49312721F233F3800EBEE6A /* PBXTargetDependency */,
+			);
+			name = LHGameraUITests;
+			productName = LHGameraUITests;
+			productReference = E49312701F233F3800EBEE6A /* LHGameraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E49312441F233F3800EBEE6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "欢子";
+				TargetAttributes = {
+					E493124B1F233F3800EBEE6A = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 3PL6P8G2W5;
+						ProvisioningStyle = Automatic;
+					};
+					E49312641F233F3800EBEE6A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E493124B1F233F3800EBEE6A;
+					};
+					E493126F1F233F3800EBEE6A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E493124B1F233F3800EBEE6A;
+					};
+				};
+			};
+			buildConfigurationList = E49312471F233F3800EBEE6A /* Build configuration list for PBXProject "LHGamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E49312431F233F3800EBEE6A;
+			productRefGroup = E493124D1F233F3800EBEE6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E493124B1F233F3800EBEE6A /* LHGamera */,
+				E49312641F233F3800EBEE6A /* LHGameraTests */,
+				E493126F1F233F3800EBEE6A /* LHGameraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E493124A1F233F3800EBEE6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E439CED91F2477AF0035BEBD /* group_default@3x.png in Resources */,
+				E493125F1F233F3800EBEE6A /* LaunchScreen.storyboard in Resources */,
+				E493125C1F233F3800EBEE6A /* Assets.xcassets in Resources */,
+				E439CED81F2477AF0035BEBD /* group_default@2x.png in Resources */,
+				E439CED71F2477AF0035BEBD /* gallery_chs_seleceted@3x.png in Resources */,
+				E439CED51F2477AF0035BEBD /* gallery_chs_normal@3x.png in Resources */,
+				E439CED61F2477AF0035BEBD /* gallery_chs_seleceted@2x.png in Resources */,
+				E439CEDA1F2477AF0035BEBD /* nav_back@2x.png in Resources */,
+				E493125A1F233F3800EBEE6A /* Main.storyboard in Resources */,
+				E439CED41F2477AF0035BEBD /* gallery_chs_normal@2x.png in Resources */,
+				E439CEDB1F2477AF0035BEBD /* nav_back@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E49312631F233F3800EBEE6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E493126E1F233F3800EBEE6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E49312481F233F3800EBEE6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E49312A71F233F9200EBEE6A /* UIImage+Watermark.m in Sources */,
+				E49312AA1F233F9200EBEE6A /* LHWatermarkViewController.m in Sources */,
+				E49312A41F233F9200EBEE6A /* PHAsset+Method.m in Sources */,
+				E49312AB1F233F9200EBEE6A /* LHWatermarkDataModel.m in Sources */,
+				E49312571F233F3800EBEE6A /* ViewController.m in Sources */,
+				E49312541F233F3800EBEE6A /* AppDelegate.m in Sources */,
+				E49312511F233F3800EBEE6A /* main.m in Sources */,
+				E49312A31F233F9200EBEE6A /* LHCaptureView.m in Sources */,
+				E439CED21F2477AF0035BEBD /* DPPhotoGroupViewController.m in Sources */,
+				E49312A51F233F9200EBEE6A /* UIImage+Filter.m in Sources */,
+				E49312B01F233F9200EBEE6A /* LHStickerView.m in Sources */,
+				E49312AD1F233F9200EBEE6A /* LHSelectWatermarkView.m in Sources */,
+				E49312B31F2341E300EBEE6A /* UIView+AAToolkit.m in Sources */,
+				E487FF4E1F2B104D007DF5A0 /* LHCameraViewController.m in Sources */,
+				E49312A61F233F9200EBEE6A /* UIImage+Resize.m in Sources */,
+				E439CED31F2477AF0035BEBD /* DPPhotoListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E49312611F233F3800EBEE6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E493126A1F233F3800EBEE6A /* LHGameraTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E493126C1F233F3800EBEE6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E49312751F233F3800EBEE6A /* LHGameraUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E49312671F233F3800EBEE6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E493124B1F233F3800EBEE6A /* LHGamera */;
+			targetProxy = E49312661F233F3800EBEE6A /* PBXContainerItemProxy */;
+		};
+		E49312721F233F3800EBEE6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E493124B1F233F3800EBEE6A /* LHGamera */;
+			targetProxy = E49312711F233F3800EBEE6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E49312581F233F3800EBEE6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E49312591F233F3800EBEE6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E493125D1F233F3800EBEE6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E493125E1F233F3800EBEE6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E49312771F233F3800EBEE6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E49312781F233F3800EBEE6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E493127A1F233F3800EBEE6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3PL6P8G2W5;
+				INFOPLIST_FILE = LHGamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xingzhe.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E493127B1F233F3800EBEE6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3PL6P8G2W5;
+				INFOPLIST_FILE = LHGamera/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xingzhe.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E493127D1F233F3800EBEE6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LHGameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LH.LHGameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LHGamera.app/LHGamera";
+			};
+			name = Debug;
+		};
+		E493127E1F233F3800EBEE6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LHGameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LH.LHGameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LHGamera.app/LHGamera";
+			};
+			name = Release;
+		};
+		E49312801F233F3800EBEE6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LHGameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LH.LHGameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LHGamera;
+			};
+			name = Debug;
+		};
+		E49312811F233F3800EBEE6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LHGameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LH.LHGameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LHGamera;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E49312471F233F3800EBEE6A /* Build configuration list for PBXProject "LHGamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E49312771F233F3800EBEE6A /* Debug */,
+				E49312781F233F3800EBEE6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E49312791F233F3800EBEE6A /* Build configuration list for PBXNativeTarget "LHGamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E493127A1F233F3800EBEE6A /* Debug */,
+				E493127B1F233F3800EBEE6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E493127C1F233F3800EBEE6A /* Build configuration list for PBXNativeTarget "LHGameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E493127D1F233F3800EBEE6A /* Debug */,
+				E493127E1F233F3800EBEE6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E493127F1F233F3800EBEE6A /* Build configuration list for PBXNativeTarget "LHGameraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E49312801F233F3800EBEE6A /* Debug */,
+				E49312811F233F3800EBEE6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E49312441F233F3800EBEE6A /* Project object */;
+}
