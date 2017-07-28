@@ -360,7 +360,6 @@
 				TargetAttributes = {
 					E493124B1F233F3800EBEE6A = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 3PL6P8G2W5;
 						ProvisioningStyle = Automatic;
 					};
 					E49312641F233F3800EBEE6A = {
@@ -601,11 +600,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3PL6P8G2W5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LHGamera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xingzhe.test;
+				PRODUCT_BUNDLE_IDENTIFIER = LH.Gamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -614,11 +613,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3PL6P8G2W5;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LHGamera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xingzhe.test;
+				PRODUCT_BUNDLE_IDENTIFIER = LH.Gamera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
