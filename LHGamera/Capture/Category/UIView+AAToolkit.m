@@ -1,8 +1,7 @@
 //
 //  UIView+AAToolkit.m
-//  XingZhe
+//  https://github.com/Mars-Programer/LHCamera
 //
-//  Created by 蒲德贵 on 15/2/28.
 //  Copyright (c) 2015年 imxingzhe.com. All rights reserved.
 //
 

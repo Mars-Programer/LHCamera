@@ -1,8 +1,12 @@
 //
-//  AACaptureView.h
-//  XingZhe
-//
-//  Created by 刘欢 on 2017/2/9.
+//  LHCaptureView.h
+//******************************************
+//gitHub 地址
+//  https://github.com/Mars-Programer/LHCamera
+//简书地址
+//http://www.jianshu.com/p/73d8a7bc44b4
+
+//  Created by LH on 2017/2/9.
 //  Copyright © 2017年 imxingzhe.com. All rights reserved.
 //
 
