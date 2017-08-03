@@ -187,7 +187,7 @@
     [LHCaptureView saveImageToPhotoAlbum:image];
     
     UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 20)];
-    label.textColor = [UIColor greenColor];
+    label.textColor = [UIColor whiteColor];
     label.textAlignment = NSTextAlignmentCenter;
     label.centerX = self.view.centerX;
     label.center = CGPointMake(SCREENWIDTH / 2, SCREENHEITH / 2);

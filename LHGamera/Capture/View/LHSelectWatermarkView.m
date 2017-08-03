@@ -134,7 +134,7 @@ static NSString *const kWatermarkCollectionCellReuseIdentifier  = @"kWatermarkCo
     BOOL state = [self.cellStatus[indexPath.row] boolValue];
 
     if (state) {
-        cell.backgroundColor = [UIColor greenColor];
+        cell.backgroundColor = [UIColor colorWithRed:24 / 255.0 green:154 / 255.0 blue:219 / 255.0 alpha:1];
     }else
         cell.backgroundColor = [UIColor colorWithWhite:204 / 255.0 alpha:1];
     
@@ -149,7 +149,7 @@ static NSString *const kWatermarkCollectionCellReuseIdentifier  = @"kWatermarkCo
     if (state) {
         cell.backgroundColor = [UIColor colorWithWhite:204 / 255.0 alpha:1];
     }else
-        cell.backgroundColor = [UIColor greenColor];
+        cell.backgroundColor = [UIColor colorWithRed:24 / 255.0 green:154 / 255.0 blue:219 / 255.0 alpha:1];
 
     [self.cellStatus replaceObjectAtIndex:indexPath.row withObject:@(!state)];
 
