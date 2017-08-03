@@ -84,7 +84,7 @@
     self.view.backgroundColor = [UIColor colorWithWhite:243 / 255.0 alpha:1];
     [self commonInit];
     [self openFilter];
-
+    
     // Do any additional setup after loading the view.
 }
 
@@ -114,7 +114,7 @@
 }
 - (void)openFilter
 {
-
+    
     UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
     rightButton.frame = CGRectMake(SCREENWIDTH - 70, 20, 70, 32);
     [rightButton setTitle:@"保存" forState:UIControlStateNormal];
@@ -125,14 +125,14 @@
                     action:@selector(shareImageClick)
           forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:rightButton];
-
+    
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     button.frame = CGRectMake(SCREENWIDTH - 130, 20, 40, 32);
     [button setTitle:@"滤镜" forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont systemFontOfSize:14];
     [button.titleLabel setAdjustsFontSizeToFitWidth:YES];
     [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-
+    
     [button addTarget:self action:@selector(changeFiter) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
@@ -163,11 +163,11 @@
                              @"珞璜":@"CIPhotoEffectChrome"};
     NSInteger index = arc4random() % 8;
     
-   self.showImageView.image = [UIImage filterWithOriginalImage:self.showImageView.image
-                                                    filterName:filter.allValues[index]];
-
+    self.showImageView.image = [UIImage filterWithOriginalImage:self.showImageView.image
+                                                     filterName:filter.allValues[index]];
+    
     self.title = filter.allValues[index];
-
+    
 }
 #pragma mark -- button click
 - (void)backClick
@@ -213,42 +213,30 @@
 #pragma mark -- LHSelectWatermarkViewDelegate
 - (void)selectWatermarkWithImageIndex:(NSInteger)index WithState:(BOOL)state
 {
-//    [self clearWatermark];
-    if (state) {
-        if (index == 0) {
-            self.showImageView.image = self.model.soureImage;
-
-        }else if (index == 1){
-            self.showImageView.image = self.model.soureImage;
-
-        }
-        LHStickerView *stick = [self.basicView viewWithTag:100 + index];
-        [stick removeFromSuperview];
-        return;
-    }
-    if (index > 1) {
-        
-//        self.showImageView.image = self.model.soureImage;
-        
-        UIImage *stickImage = [UIImage imageNamed:[NSString stringWithFormat:@"watermark_chartlet_%ld",(long)index - 1]];
-        
-        LHStickerView *view = [[LHStickerView alloc] initWithImage:stickImage];
-        view.center = CGPointMake(self.basicView.width/2, self.basicView.height/2);
-        CGFloat ratio = MIN( (0.3 * self.basicView.width) / view.width,
-                            (0.3 * self.basicView.height) / view.height);
-        [view setScale:ratio];
-        view.delegate = self;
-        view.tag = 100 + index;
-        [self.basicView addSubview:view];
-        [LHStickerView setActiveStickerView:view];
-    }
+    //    [self clearWatermark];
+    
+    LHStickerView *stick = [self.basicView viewWithTag:100 + index];
+    [stick removeFromSuperview];
+    
+    
+    UIImage *stickImage = [UIImage imageNamed:[NSString stringWithFormat:@"watermark_chartlet_%ld",(long)index + 1]];
+    
+    LHStickerView *view = [[LHStickerView alloc] initWithImage:stickImage];
+    view.center = CGPointMake(self.basicView.width/2, self.basicView.height/2);
+    CGFloat ratio = MIN( (0.3 * self.basicView.width) / view.width,
+                        (0.3 * self.basicView.height) / view.height);
+    [view setScale:ratio];
+    view.delegate = self;
+    view.tag = 100 + index;
+    [self.basicView addSubview:view];
+    [LHStickerView setActiveStickerView:view];
 }
 #pragma mark -- LHStickerViewDelegate
 - (void)deleteStickerView:(LHStickerView *)stickerView
 {
     [stickerView removeFromSuperview];
     [self.selectWatermarkView reloadCellStatusWithIndex:stickerView.tag - 100];
-//    [self clearWatermark];
+    //    [self clearWatermark];
 }
 
 - (NSString *)imageLeng{

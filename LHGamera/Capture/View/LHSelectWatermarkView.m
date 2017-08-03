@@ -105,9 +105,6 @@ static NSString *const kWatermarkCollectionCellReuseIdentifier  = @"kWatermarkCo
 }
 - (void)reloadCellStatusWithIndex:(NSInteger)index
 {
-    if (index > self.cellStatus.count - 1 || index < 0) {
-        return;
-    }
     [self.cellStatus replaceObjectAtIndex:index withObject:@(NO)];
     [self defaultWatermark];
 }
@@ -132,22 +129,8 @@ static NSString *const kWatermarkCollectionCellReuseIdentifier  = @"kWatermarkCo
     imageView.backgroundColor = [UIColor clearColor];
     [cell.contentView addSubview:imageView];
     
-    if (indexPath.item <= 1 ) {
-        
-        UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, cell.contentView.width, cell.contentView.height)];
-        if (indexPath.item == 0) {
-            label.text = @"经典水印";
-        }else
-            label.text = @"数据水印";
+        imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"watermark_preview_%ld",(long)indexPath.item + 1]];
 
-        label.textAlignment = NSTextAlignmentCenter;
-        label.font = [UIFont boldSystemFontOfSize:16];
-        label.textColor = [UIColor whiteColor];
-        [cell.contentView addSubview:label];
-    }else{
-        imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"watermark_preview_%ld",(long)indexPath.item - 1]];
-
-    }
     BOOL state = [self.cellStatus[indexPath.row] boolValue];
 
     if (state) {
@@ -159,27 +142,7 @@ static NSString *const kWatermarkCollectionCellReuseIdentifier  = @"kWatermarkCo
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSInteger count = 0;
-    if (indexPath.item == 0 || indexPath.item == 1) {
-        for (int i = 0; i < self.cellStatus.count; i ++) {
-            BOOL rect = [self.cellStatus[i] boolValue];
-            if (rect) {
-                count ++;
-            }
-        }
-        if (indexPath.item == 0 && [self.cellStatus[0] boolValue]) {
-            count --;
-        }
-        if (indexPath.item == 1 && [self.cellStatus[1] boolValue]) {
-            count --;
-        }
-        if (count <= 0) {
-            return;
-        }
-        [self.cellStatus replaceObjectAtIndex:!indexPath.item withObject:@(NO)];
-        [self.collectionView reloadData];
-
-    }
+   
     UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
     
     BOOL state = [self.cellStatus[indexPath.row] boolValue];
