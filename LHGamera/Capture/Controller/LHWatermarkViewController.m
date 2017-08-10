@@ -15,6 +15,10 @@
 #import "UIImage+Filter.h"
 #import "UIImage+Watermark.h"
 #import "UIView+AAToolkit.h"
+
+
+#define KBlueColor [UIColor colorWithRed:24 / 255.0 green:154 / 255.0 blue:219 / 255.0 alpha:1]
+
 @interface LHWatermarkViewController ()<LHSelectWatermarkViewDelegate,LHStickerViewDelegate>
 
 {
@@ -118,7 +122,7 @@
     UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeCustom];
     rightButton.frame = CGRectMake(SCREENWIDTH - 70, 20, 70, 32);
     [rightButton setTitle:@"保存" forState:UIControlStateNormal];
-    [rightButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [rightButton setTitleColor:KBlueColor forState:UIControlStateNormal];
     rightButton.titleLabel.font = [UIFont systemFontOfSize:14];
     [rightButton.titleLabel setAdjustsFontSizeToFitWidth:YES];
     [rightButton addTarget:self
@@ -131,7 +135,7 @@
     [button setTitle:@"滤镜" forState:UIControlStateNormal];
     button.titleLabel.font = [UIFont systemFontOfSize:14];
     [button.titleLabel setAdjustsFontSizeToFitWidth:YES];
-    [button setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [button setTitleColor:KBlueColor forState:UIControlStateNormal];
     
     [button addTarget:self action:@selector(changeFiter) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
@@ -141,7 +145,7 @@
     [backButton setTitle:@"<返回" forState:UIControlStateNormal];
     backButton.titleLabel.font = [UIFont boldSystemFontOfSize:14];
     [backButton.titleLabel setAdjustsFontSizeToFitWidth:YES];
-    [backButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [backButton setTitleColor:KBlueColor forState:UIControlStateNormal];
     
     [backButton addTarget:self action:@selector(backButtonClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:backButton];
@@ -162,7 +166,7 @@
                              @"岁月":@"CIPhotoEffectTransfer",
                              @"珞璜":@"CIPhotoEffectChrome"};
     NSInteger index = arc4random() % 8;
-    
+    self.showImageView.image = self.model.watermarkImage;
     self.showImageView.image = [UIImage filterWithOriginalImage:self.showImageView.image
                                                      filterName:filter.allValues[index]];
     
